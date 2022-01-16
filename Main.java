@@ -69,7 +69,12 @@ class Main {
 					System.out.println("Numeros aleatorios no se distinguen");
 				} 
 
-				if()  
+				if(a>=b && a>=c)  
+					System.out.println(a+" is the largest Number");  
+				else if (b>=a && b>=c)  
+					System.out.println(b+" is the largest Number");  
+				else  
+					System.out.println(c+" is the largest number");  
 				
 			}		
 							
