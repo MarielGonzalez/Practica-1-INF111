@@ -30,30 +30,30 @@ public class planillaEmpleados {
 			String nombrePrimeraPersona = ingresoPrimerPersona.substring(0, position);
 						
 			String ingreso= ingresoPrimerPersona.substring(position+1 , ingresoPrimerPersona.length());
-			int YearPrimeraPersona = Integer.parseInt(ingreso.trim());  
+			int yearPrimeraPersona = Integer.parseInt(ingreso.trim());  
 			
 			System.out.println("Nombre del empleado: " + nombrePrimeraPersona );
-			System.out.println("Año de Ingreso :" + YearPrimeraPersona );
+			System.out.println("Año de Ingreso :" + yearPrimeraPersona );
 			
 			System.out.println("\n Ingrese el Nombre del empleado y el año de ingreso separado por una coma(','): ");
 			String ingresoSegundaPersona = scan.nextLine();
 			int position2 = ingresoSegundaPersona.indexOf(",");
 			String nombreSegundaPersona = ingresoSegundaPersona.substring(0, position2);
 			String ingreso2= ingresoSegundaPersona.substring(position2+1 , ingresoSegundaPersona.length());
-			int YearSegundaPersona = Integer.parseInt(ingreso2.trim());  
+			int yearSegundaPersona = Integer.parseInt(ingreso2.trim());  
 			
 			System.out.println("Nombre del empleado: " + nombreSegundaPersona );
-			System.out.println("Año de Ingreso: " + YearSegundaPersona );
+			System.out.println("Año de Ingreso: " + yearSegundaPersona );
 									
 			System.out.println(" \n Ingrese el Nombre del empleado y el año de ingreso separado por una coma(','): ");
 			String ingresoTerceraPersona = scan.nextLine();
 			int position3 = ingresoTerceraPersona.indexOf(",");
 			String nombreTerceraPersona = ingresoTerceraPersona.substring(0, position3);
 			String ingreso3= ingresoTerceraPersona.substring(position3+1 , ingresoTerceraPersona.length());
-			int YearTerceraPersona = Integer.parseInt(ingreso3.trim());  
+			int yearTerceraPersona = Integer.parseInt(ingreso3.trim());  
 					
 			System.out.println("Nombre del empleado: " + nombreTerceraPersona );
-			System.out.println("Año Ingreso : " + YearTerceraPersona );
+			System.out.println("Año Ingreso : " + yearTerceraPersona );
 					
 			if((nombrePrimeraPersona.contentEquals(nombreSegundaPersona)) 
 			   || (nombrePrimeraPersona.contentEquals(nombreTerceraPersona)) 
@@ -81,15 +81,15 @@ public class planillaEmpleados {
 		        LocalDate getfechaLocal = fecha.toInstant().atZone(localTimeZone).toLocalDate();
 		        int añoActual=(getfechaLocal.getYear());
 		        
-		    int tiempoEmpleado1 = añoActual-YearPrimeraPersona;
-				int tiempoEmpleado2 = añoActual-YearSegundaPersona;
-				int tiempoEmpleado3 = añoActual-YearTerceraPersona;
+		    int tiempoEmpleado1 = añoActual-yearPrimeraPersona;
+				int tiempoEmpleado2 = añoActual-yearSegundaPersona;
+				int tiempoEmpleado3 = añoActual-yearTerceraPersona;
 		        
 		    System.out.println("\n");
 		    String texto = "\n Ingreso de Empleados: %s (%d), %d años  en la empresa  ";
-		    System.out.printf(texto, nombrePrimeraPersona,YearPrimeraPersona, tiempoEmpleado1);
-				System.out.printf(texto, nombreSegundaPersona,YearSegundaPersona, tiempoEmpleado2);
-				System.out.printf(texto, nombreTerceraPersona,YearTerceraPersona, tiempoEmpleado3);
+		    System.out.printf(texto, nombrePrimeraPersona,yearPrimeraPersona, tiempoEmpleado1);
+				System.out.printf(texto, nombreSegundaPersona,yearSegundaPersona, tiempoEmpleado2);
+				System.out.printf(texto, nombreTerceraPersona,yearTerceraPersona, tiempoEmpleado3);
 				}
 			
 							
