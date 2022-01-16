@@ -71,7 +71,7 @@ public class planillaEmpleados {
 				}else if((randomNumber2>=randomNumber1) && (randomNumber2>=randomNumber3)) {
 					System.out.println("El numero mayor es: " + randomNumber2);
 				}else 		   
-				       System.out.println("El numero mayor es: " + randomNumber3);
+				    System.out.println("El numero mayor es: " + randomNumber3);
 				 							
 			}else 
 				{//determinar cual es el tiempo aparente que tiene una persona en la empresa
@@ -81,13 +81,13 @@ public class planillaEmpleados {
 		        LocalDate getfechaLocal = fecha.toInstant().atZone(localTimeZone).toLocalDate();
 		        int añoActual=(getfechaLocal.getYear());
 		        
-		        int tiempoEmpleado1 = añoActual-YearPrimeraPersona;
+		    int tiempoEmpleado1 = añoActual-YearPrimeraPersona;
 				int tiempoEmpleado2 = añoActual-YearSegundaPersona;
 				int tiempoEmpleado3 = añoActual-YearTerceraPersona;
 		        
-		        System.out.println("\n");
-		        String texto = "\n Ingreso de Empleados: %s (%d), %d años  en la empresa  ";
-		        System.out.printf(texto, nombrePrimeraPersona,YearPrimeraPersona, tiempoEmpleado1);
+		    System.out.println("\n");
+		    String texto = "\n Ingreso de Empleados: %s (%d), %d años  en la empresa  ";
+		    System.out.printf(texto, nombrePrimeraPersona,YearPrimeraPersona, tiempoEmpleado1);
 				System.out.printf(texto, nombreSegundaPersona,YearSegundaPersona, tiempoEmpleado2);
 				System.out.printf(texto, nombreTerceraPersona,YearTerceraPersona, tiempoEmpleado3);
 				}
